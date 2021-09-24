@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 2 Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Klee+One&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navigation">
+                <li><a href="#" id="menu">&equiv; Menu</a> </li>
+                <li><a href="../Week01/index.html">Week 1</a></li>
+                <li><a href="../Week02/index.html">Week 2</a></li>
+                <li><a href="../Week03/index.html">Week 3</a></li>
+                <li><a href="../Week04/index.html">Week 4</a></li>
+                <li><a href="../Week05/index.html">Week 5</a></li>
+                <li><a href="../Week07/index.html">Week 7</a></li>
+                <li><a href="../Week08/index.html">Week 8</a></li>
+                <li><a href="../Week09/index.html">Week 9</a></li>
+                <li><a href="../Week10/index.html">Week 10</a></li>
+            </ul>
+        </nav>
+        <h1>Week 2 Notes</h1>
+        <h2 class="notes">Programming Basics</h2>
+    </header>
+    <main id="notes">
+        <h3>Declaring and Assigning</h3>
+        <p>All variables have to be declared before they can be used, the '=' is the operator used to do this
+            Variables can be defined by either using 'let' or 'const', let means the variable can be changed (for example a high score),
+             while const means it cannot be changed or reassigned (for example using pi in a calculation).
+        </p>
+        
+        <p>
+            The keyword const is used when the variable will not be reassigned to another value, 
+            whereas let is used if the variable might be reassigned later in the program.  
+        </p>
+        <br>
+        <p class="highlight">
+            You can even declare and assign multiple variables at the same time if you separate them with commas:
+            <br> let x = 3, y = 4, z = 5;
+        </p>
+        <br>
+
+        <h3>Constructor Function</h3>
+        <p>
+            Let's say you are building a game like Sims, everything in the game with characteritics could be created as a cnstructor function.
+            So, for example a person, think of all the things you could customize for each person: name, age, hair color, eye color, hairstyle. 
+            You can create a constructor function called person and you can refer to their attributes using the 'this.' keyword.
+        </p>
+
+        <p class="highlight">
+            // constructor function <br>
+            function Person () {<br>
+                this.name = 'John',<br>
+                this.age = 23,<br>
+            
+                 this.greet = function () {<br>
+                    console.log('hello');<br>
+                }<br>
+            }
+        </p>
+
+        
+        <br>
+        <h3>Pop, Push, Shift, and Unshift</h3>
+        <ul>
+           <li>
+              <p>Pop():  remove the <span class="defTitle">last</span> item from an array</p>
+           </li> 
+           <li>
+            <p>Shift(): removes the <span class="defTitle">first item </span> in the array</p>
+         </li> 
+         <li>
+            <p>Unhift(): appends a new item to the <span class="defTitle">beginning</span> of the array</p>
+         </li> 
+         <li>
+            <p>Push(): appends a new value to the <span class="defTitle">end </span> of the array</p>
+         </li> 
+        </ul>
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <h3>Functions</h3>
+        
+        <p>
+            A function is a chunk of code that can be referenced by a name, and is almost like a small, self-contained mini program. 
+        </p>
+        
+        <h3>Parameters and Arguments</h3>
+        <p>
+            Parameters are set when the function is <span class=defTitle>defined</span> and Arguments invoked when the function is <span class=defTitle>called</span>.
+        </p>
+        <h3>Callbacks</h3>
+        <p>
+            A call back is simply a function that is invoked after something else happens, it deosnt just happen on its own. This happens by passing a 
+            function into another function.
+        </p>
+        <br>
+        <hr>
+        <br>
+
+        <section>
+            <h3>Definitions</h3>
+            <ul>
+                <li><p class="defTitle">Arrays</p><span>An array is an ordered list of values. </span>
+                </li>
+                <li><p class="defTitle">String</p>
+                    <span>A string is a collection of characters, such as letters 
+                    and symbols. We can create a string literal by writing a group of characters inside quote marks. </span>
+                </li>
+                
+                <li><p class="defTitle">Constructor Function</p>
+                    <span>A constructor function is used to create objects </span>
+                </li>
+                <li><p class="defTitle">Super-Powered Strings</p>
+                    <span>Template literals can be thought of as super-powered strings as they behave 
+                        in the same way as normal string literals, but with the extra power of string interpolation. </span>
+                </li>
+                <li><p class="defTitle">String Interpolations</p>
+                    <span>we can insert, or interpolate, variables into strings using template literals. </span>
+                </li>
+                <li><p class="defTitle">Symbol()</p>
+                    <span>They can be used to create unique values, which helps to avoid any naming collisions. </span>
+                </li>
+                <li><p class="defTitle">Destructuring Arrays</p>
+                    <span>Destructuring an array is the concept of taking values out of an array and presenting them as individual values. </span>
+                </li>
+                <li><p class="defTitle">String</p><span> </span></li>
+            </ul>
+
+        </section>
+
+       
+    </main>
+    <footer> &copy; 2021 | Portfolio | Claudia Chileshe </footer>
+</body>
+
+</html>
