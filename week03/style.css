@@ -1,0 +1,96 @@
+/* Colors */
+
+/*
+#9adff3 blue
+#f7cadd pink
+#d5b3f1 purple
+#feeb4f yellow
+#8d8d8d grey
+#303437 black
+*/
+body	{
+	background-color: #ffffff;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#notes p, #notes span{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5rem;
+}
+main { 
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: 700;
+	width: 80%;
+	max-width: 100%;
+}
+
+.date	{
+	font-size: 20px;
+}
+
+header	{
+	color: #303437;
+	font-size: 28px;
+}
+
+p	{
+	color: #303437;
+	font-size: 18px;
+}
+
+p.highlight	{
+	border-left: 6px solid #d5b3f1;
+	padding-left: 3%;
+    margin-left: 5%;
+    
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+    border: 10px solid #9adff3;
+    padding: 18px;
+    margin: 10px;
+    background-color: #d5b3f1;
+    transition: all 0.8s;
+    font-size: 120%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover {
+    background-color: #9adff3;
+    color: #fff;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+}
+
+.display li {
+    display: block;
+}
+
+.defTitle{
+    color:#f7a307 ;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.subHeader, h3{
+    color: #f2a7d1;
+}
