@@ -27,83 +27,117 @@
                 <li><a href="../Week10/index.html">Week 10</a></li>
             </ul>
         </nav>
-        <h1>Week 2 Notes</h1>
-        <h2 class="notes">Programming Basics</h2>
+        <h1>Week 3 Notes</h1>
+        <h2 class="notes">Objects- Chapter 5</h2>
     </header>
     <main id="notes">
-        <h3>Declaring and Assigning</h3>
-        <p>All variables have to be declared before they can be used, the '=' is the operator used to do this
-            Variables can be defined by either using 'let' or 'const', let means the variable can be changed (for example a high score),
-             while const means it cannot be changed or reassigned (for example using pi in a calculation).
+        <h3>Object Literals</h3>
+        <p>An ojbect can be thought of as a box of labeled folders. Every useful object has a series of labels known as keys and values, 
+            which are generally data that we care about all grouped together. 
+
         </p>
-        
-        <p>
-            The keyword const is used when the variable will not be reassigned to another value, 
-            whereas let is used if the variable might be reassigned later in the program.  
-        </p>
+    
         <br>
         <p class="highlight">
-            You can even declare and assign multiple variables at the same time if you separate them with commas:
-            <br> let x = 3, y = 4, z = 5;
+            To create an object literal, simply enter a pair of curly braces.
+            <br> const name_of_object = {};
         </p>
+        <p>When accessing the property of a object you please a '.' after the name of the object, followed by the name of the property you want to specify.
+        </p>
+
         <br>
 
-        <h3>Constructor Function</h3>
+        <h3>The RegExp Object</h3>
         <p>
-            Let's say you are building a game like Sims, everything in the game with characteritics could be created as a cnstructor function.
-            So, for example a person, think of all the things you could customize for each person: name, age, hair color, eye color, hairstyle. 
-            You can create a constructor function called person and you can refer to their attributes using the 'this.' keyword.
+            A regular expression is a sequence of characters that forms a search pattern. 
+            The search pattern can be used for text search and text to replace operations. 
+            A regular expression can be a single character or a more complicated pattern. 
+            Regular expressions can be used to perform all types of text search and text replace operations.
+            Regurlar Expressions are objects the have their own predetermined properties.
         </p>
 
-        <p class="highlight">
-            // constructor function <br>
-            function Person () {<br>
-                this.name = 'John',<br>
-                this.age = 23,<br>
-            
-                 this.greet = function () {<br>
-                    console.log('hello');<br>
-                }<br>
-            }
-        </p>
+        <div class="highlight">
+           <p> 
+               The <span class="defTitle">global</span> property makes the pattern return all matches. 
+            By default, the pattern only looks for the first occurrence of a match. <br>
+
+            The <span class="defTitle">ignoreCase</span> property makes the pattern case-insensitive. By default, they are case sensitive <br>
+
+            The <span class="defTitle">multiline</span> property makes the pattern multiline. By default, a pattern will stop at the end of a line. <br>
+           </p> 
+        </div>
 
         
         <br>
-        <h3>Pop, Push, Shift, and Unshift</h3>
-        <ul>
-           <li>
-              <p>Pop():  remove the <span class="defTitle">last</span> item from an array</p>
-           </li> 
-           <li>
-            <p>Shift(): removes the <span class="defTitle">first item </span> in the array</p>
-         </li> 
-         <li>
-            <p>Unhift(): appends a new item to the <span class="defTitle">beginning</span> of the array</p>
-         </li> 
-         <li>
-            <p>Push(): appends a new value to the <span class="defTitle">end </span> of the array</p>
-         </li> 
-        </ul>
+        <h3>The Document Object Model</h3>
+        <p>
+            DOM is a way to represent the webpage in a structured hierarchical way so that it will become easier for programmers and users to 
+            glide through the document. 
+            <br>
+            The DOM treats everything on a web page as a node. HTML tags, the text inside these tags, even the attributes of a tag are all nodes. <br>
+            What happens is DOM allows us to access elements on a webpage, for example if we want to get a user's input and do something with it
+             we could get the input by the id of that element with getElementById() for example.
+        </p>
+      
         <br>
+
+        <h3>Events</h3>
+        <p>
+            Events are another part of the DOM and they are what provides the link between the web page and user interactions. 
+            Every time a user interacts with a web page, such as clicking on a link, pressing a key, or moving a mouse, an event occurs that our program can detect and then respond to.
+        </p>
+
+        <div class="highlight">
+           <p> 
+               The <span class="defTitle">global</span> property makes the pattern return all matches. 
+            By default, the pattern only looks for the first occurrence of a match. <br>
+
+            The <span class="defTitle">ignoreCase</span> property makes the pattern case-insensitive. By default, they are case sensitive <br>
+
+            The <span class="defTitle">multiline</span> property makes the pattern multiline. By default, a pattern will stop at the end of a line. <br>
+           </p> 
+        </div>
         <br>
         <hr>
         <br>
 
-        <h3>Functions</h3>
+        <h3>Food For Thought</h3>
         
         <p>
-            A function is a chunk of code that can be referenced by a name, and is almost like a small, self-contained mini program. 
+        Consider the following scenerio. We are building a game called Superhero Mashup. This game allows you to create the classic superhero characters,
+        with the ability to assign them different superpowers. So let's say we mash up Hulk with Superman as you level up the mash powers become more speficic.
+        </p>
+        <p>
+        I was thinking about how we could use objects and property to create these characters. So based on what I understand, I could create an object called "Character". 
+        The properties of these characters would be something like: Name, Gender, Superpowers,Hair Color, and Profession. Essentially because each of these properties
+        are predifined by us the creator, we could put the all in an array in the object. An example would be (I added a couple extra):</p>
+        
+        <p class="highlight">
+            const character = {
+                superName: ['Black Panther','Loki','Ironman', 'Black Widow', 'Hulk'],
+                mashup: ['Antman','Captain America','Suri', 'Winter Soldier' ],
+                gender: ['Male','Female'],
+                hairColor: ['Brown','Red','Blond'],
+                profession: ['Hunter','Healer','Tank', Shaman],
+                weakness: ['Anger','Running out of Arrows','Loss of Hammer worthiness'],
+                strengths:['Technology','Singing Lullabys','Opening magic portals'],
+                superpower: ['Transform','Laser beam','cat like strength, 'kicking butt when you don't have powers'],
+                heroEmerge() {
+                    return 'Welcome back Big Guy';
+                }
+            };
+
+            const myCharacter = { name: 'Hulk', mashup: 'Black Widow' };
         </p>
         
-        <h3>Parameters and Arguments</h3>
         <p>
-            Parameters are set when the function is <span class=defTitle>defined</span> and Arguments invoked when the function is <span class=defTitle>called</span>.
-        </p>
-        <h3>Callbacks</h3>
-        <p>
-            A call back is simply a function that is invoked after something else happens, it deosnt just happen on its own. This happens by passing a 
-            function into another function.
-        </p>
+          This is just the simple version of the game, arguable each of these properties could 
+        be objects of their own to allow users to build even more complex characters. Doesn't this make the characters more reuseable? Particularly since these are 
+        predifined custom characters. On second thought would it be better instead of having arrarys to have the object of character contain objects? Not 
+        sure which would be more approriate. I am thinking it might depend on the use. For example superpower could be an object because if it has different properties like
+        power-level, catchphrase, 
+        </p> 
+    
         <br>
         <hr>
         <br>
@@ -111,30 +145,18 @@
         <section>
             <h3>Definitions</h3>
             <ul>
-                <li><p class="defTitle">Arrays</p><span>An array is an ordered list of values. </span>
+                <li><p class="defTitle">this</p><span>The keyword this refers to the object that it is within. It can be used inside methods to gain access to the object’s properties. </span>
                 </li>
-                <li><p class="defTitle">String</p>
+                <li><p class="defTitle">roll()</p>
                     <span>A string is a collection of characters, such as letters 
                     and symbols. We can create a string literal by writing a group of characters inside quote marks. </span>
                 </li>
                 
-                <li><p class="defTitle">Constructor Function</p>
-                    <span>A constructor function is used to create objects </span>
+                <li><p class="defTitle">object literal pattern</p>
+                    <span>A soution to name colisions(when variables or funstions share the same name but have different uses),
+                        by creating an object literal that serves as the namespace, then adding any values as properties of that object, and any functions as methods. </span>
                 </li>
-                <li><p class="defTitle">Super-Powered Strings</p>
-                    <span>Template literals can be thought of as super-powered strings as they behave 
-                        in the same way as normal string literals, but with the extra power of string interpolation. </span>
-                </li>
-                <li><p class="defTitle">String Interpolations</p>
-                    <span>we can insert, or interpolate, variables into strings using template literals. </span>
-                </li>
-                <li><p class="defTitle">Symbol()</p>
-                    <span>They can be used to create unique values, which helps to avoid any naming collisions. </span>
-                </li>
-                <li><p class="defTitle">Destructuring Arrays</p>
-                    <span>Destructuring an array is the concept of taking values out of an array and presenting them as individual values. </span>
-                </li>
-                <li><p class="defTitle">String</p><span> </span></li>
+                
             </ul>
 
         </section>
