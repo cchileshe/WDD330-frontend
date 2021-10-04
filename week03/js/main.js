@@ -21,7 +21,7 @@ const links = [
   
   function scrollBack() {
     window.scrollTo(0,50);
-  }
+  };
 
   //Chapter 5-7 
   const quiz = [
