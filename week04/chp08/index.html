@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap" rel="stylesheet">
+    <title>Week04 - forms</title>
+    <script src="main.js"></script>
+</head>
+
+<body onload="initialize()">
+    
+    
+    <main>
+        <section class='dojo'>
+            <div class='quiz-body'>
+              <header>
+                <h1>Week04-Quiz Ninja!</h1>
+                <div id='score'>Score: <strong>0</strong></div>
+              </header>
+              <div id='question'></div>
+
+            <!--  Chp08:add a form element with an ID of response in the HTML. -->  
+              <form id='response'>
+                <input name='answer' type='text'>
+                <button type='submit'>Submit Answer</button>
+              </form>
+              <div id='result'></div>
+              <div id='info'></div>
+              <button id='start'>Click to Start</button>
+            </div>
+          </section>
+    </main>
+</body>
+</html>
+

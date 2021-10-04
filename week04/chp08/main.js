@@ -85,11 +85,13 @@ this.show(this.start);
 
 const game = {
 start(quiz){
+  console.log('works');
 this.score = 0;
 this.questions = [...quiz];
 view.setup();
 this.ask();
 },
+
 
 /* 
 Chp08:
@@ -132,7 +134,7 @@ view.teardown();
 }
 }
 
-view.start.addEventListener('click', () => game.start(quiz), false);
+view.start.addEventListener('onClick', () => game.start(quiz), false);
 
 // Chp08:add an event handler that fires when the form is submitted
 view.response.addEventListener('submit', (event) => game.check(event), false);
