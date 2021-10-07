@@ -111,6 +111,15 @@ h1{
   font-size: 40px;
   margin: 0;
 }
+
+h2{
+    margin: 1em;
+    text-align: center;
+}
+
+.centerText{
+    text-align: center;
+}
 button {
   color: #ffffff;
   background-color: #9adff3;
@@ -159,7 +168,7 @@ TIC TAC TOE
 */
 #tic-tac-toe{
 	border-collapse: collapse;
-	border: solid 2px #bababa;
+	border:none;
 	font-size: 4em;
 	font-weight: 700;
 	position: absolute;
