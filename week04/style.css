@@ -107,19 +107,25 @@ box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
 h1{
   color: #9adff3;
   font-weight: 900;
-  text-align: center;
   font-size: 40px;
   margin: 0;
+  padding-top:2em;
+  
 }
 
 h2{
-    margin: 1em;
-    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
+
 
 .centerText{
     text-align: center;
 }
+
+.tab { 
+    margin-left: 1em;
+ }
 button {
   color: #ffffff;
   background-color: #9adff3;
@@ -160,6 +166,11 @@ button {
 
 .subHeader, h3{
     color: #f2a7d1;
+}
+.space{
+   
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 /*

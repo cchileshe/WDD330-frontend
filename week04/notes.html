@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 2 Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Klee+One&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+      
+        <h1 class="centerText">Week04 Notes</h1>
+        
+    </header>
+    <main id="notes">
+       <section>
+        <div>
+            <h2 class="notes">Forms- Chapter 8</h2>
+            <p>Processing forms before they are sent to the server is becoming more and more common, 
+                this is where Javascript plays a strong role.
+    
+            </p>
+        
+            <p>
+                Each form control has an initial value that can be specified in the HTML code. This value can be changed 
+                by a user entering information or interacting with the form’s interface (such as using a slider to increase or 
+                decrease a value). The value can also be changed dynamically using JavaScript.
+            </p>
+    
+            <br>
+    
+            <p>
+                If the form had the same name as any properties or methods of thedocument.formsobject, such as 'submit', for example, 
+                that property or method would be referenced instead of the form element.
+            </p>
+
+
+        </div>
+       
+    </section>
+       
+     <hr>
+
+        <section class="space">
+            <h2 class="notes">Chp12 - Object-Oriented Programming in JavaScript</h2>
+            <p>
+                Object-oriented programming is often used to model representations of objects in the real world. 
+                There are three main concepts in OOP: encapsulation, polymorphism and inheritance.
+            </p>
+
+            <br>
+            <h4>Encapsulation</h4>
+            <p>
+                When I use my juicer, I put the fruit into the machine, press the 'on' button and out comes the juice. 
+                I haven’t a clue how it does it—only that it makes a very loud noise! 
+            </p>
+
+            <br>
+
+            <h4>Polymorphism</h4>
+            <p>
+                My juicer isn't the only appliance I own that has an 'on' button, although the way the on button works is 
+                slightly different for each appliance. My juicer also uses the same electrical outlet as other appliances in my kitchen. I can also place various types of fruit into it and it still juices them.
+            </p>
+            <br>
+
+            <h4>Inheritance</h4>
+            <p>
+                I’d really like the next model up from my juicer, as it can deal with more types of fruit and it’s a bit quieter. Even though it has these extra features, I’m sure that inside it uses many of 
+                the same parts that my juicer has. 
+            </p>
+            <br>
+
+            <h4>Class</h4>
+            <p>
+                A class is like a cookie cutter, thinking back to my Superhero game from last week, we could use a class to set the characteristics of 
+                a hero. Then the player can build unique characters based on the same class.
+            </p>
+            <p>Syntax for a Class</p>
+            <p class="highlight">
+                class classname { <br>
+                    <span class="tab">constructor(parameter) {</span> <br>
+                        <span class="tab">this.classname = parameter;</span>
+                       <br>
+                    <span class="tab">}</span><br>
+                  } <br>
+            </p>
+            <br>
+            <p>
+                JavaScript contains a number of built-in constructor functions such as Object, Array, and Function 
+                that can be used to create objects, arrays and functions instead of literals.
+            </p>
+            <p>By convention, the names of constructor functions or class declarations are capitalized, 
+                which is the convention used for classes in class-based programming languages.
+            </p>
+
+            <h4>Prototype Property</h4> 
+            <p>
+                Acts as a template object that it inherits methods and properties from. An object's prototype object may also have a prototype object, 
+                which it inherits methods and properties from, and so on, this is known as a prototype chain. 
+            </p>   
+            <p>
+                The prototype can be used to add any new properties and methods after the class has been declared. It 
+                should be used to define any properties that will remain the same for every instance of the class.
+            </p>
+            <div class="space">
+                <h3>Definitions</h3>
+                <ul>
+                    <li><p class="defTitle">OOP</p>
+                        <span>Object-oriented programming (OOP for short) is a style of programming that involves 
+                          separating the code into objects that have properties and methods. 
+                             </span>
+                    </li>
+                    <li>
+                        <p class="defTitle">Encapsulation</p>
+                        <span>
+                            the inner workings are kept hidden inside the object and only the essential functionalities are exposed to the end user, such as the 'on' button.
+                        </span>
+                    </li>
+                    
+                    <li>
+                        <p class="defTitle">Polymorphism</p>
+                        <span>
+                            the same process can be used for different objects.
+                         </span>
+                    </li>
+
+                    <li>
+                        <p class="defTitle">Inheritance</p>
+                        <span>
+                            taking the features of one object then adding some new features.
+                        </span>
+                    </li>
+
+                    <li>
+                        <p class="defTitle">Class</p>
+                        <span>
+                            A Classs is used to define the blueprint of objects.
+                        </span>
+                    </li>
+
+                    <li><p class="defTitle"></p>
+                        <span>
+                            
+                        </span>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="space">
+                <h3>Questions</h3>
+                <ul>
+                   <li>
+                       <p>
+                           What is the difference betweern a class and a function?
+                       </p>
+                   </li> 
+
+                </ul>
+
+                <p>
+                </p>
+            </div>
+        </section>
+<hr>
+
+
+
+        <section>
+            <h2 class="notes">Chp15 - Modern JavaScript Development</h2>
+            <div>
+                <h4>
+                    Modular JavaScript
+                </h4>
+                <p>
+                    A module is a self-contained piece of code that provides functions and methods that can then be used in other files 
+                    and by other modules. This helps to keep code organized in separate, reusable files, which improves code maintainability. The code in a module should have a single purpose, and group together functions with distinct functionality. 
+                </p>
+
+                <h4>
+                    MVC Frameworks
+                </h4>
+                <p>MVC separates an application into three distinct, independent components that interact with each other:</p>
+                <ul>
+                    <li>
+                        <h4>Models</h4>
+                        <p>
+                            Models are objects that implement the functionality for creating, reading, updating and deleting 
+                            (known as CRUD tasks) specific pieces of information about the application, as well as any other associated logic and behavior. I
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <h4>Views</h4>
+                        <p>
+                            Views provide a visual representation of the model showing all the relevant information. 
+                            In a web application, this would be the HTML displayed on a web page. Views also provide a way for users to interact with an application, usually via forms. 
+                        </p>
+                    </li>
+
+
+                    <li>
+                        <h4>Controllers</h4>
+                        <p>
+                            Controllers link models and views together by communicating between them. They respond to events, which are usually inputs from a user 
+                            (entering some data into a form, for example), process the information, then update the model and view accordingly.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="space">
+                <h3>Definitions</h3>
+                <ul>
+                    <li><p class="defTitle">this</p><span>The keyword this refers to the object that it is within. It can be used inside methods to gain access to the object’s properties. </span>
+                    </li>
+                    <li><p class="defTitle">roll()</p>
+                        <span>A string is a collection of characters, such as letters 
+                        and symbols. We can create a string literal by writing a group of characters inside quote marks. </span>
+                    </li>
+                    
+                    <li><p class="defTitle">object literal pattern</p>
+                        <span>A soution to name colisions(when variables or funstions share the same name but have different uses),
+                            by creating an object literal that serves as the namespace, then adding any values as properties of that object, and any functions as methods. </span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+       
+    </main>
+    <footer> &copy; 2021 | Portfolio | Claudia Chileshe </footer>
+</body>
+
+</html>
