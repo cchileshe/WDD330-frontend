@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>To Do List</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="./css/style.css" type="text/css">
+</head>
+<body>
+<div class="main_content">
+    <div class="logo">
+        <img src="public/assets/android-chrome-256x256.png" alt="" width="50px" height="50px">
+    </div>
+    <h2 class="siteText">TODO</h2>
+
+    <form class="add_bar">
+        <input 
+        class="todo_description form__field" 
+        placeholder="Type you task name here" name="name" 
+        id='name' 
+        >
+        
+        <!-- <select name="categories" id="category">
+            <option id="wellbeing" value="1">WellBeing</option>
+            <option id="work" value="2">Work</option>
+            <option id="school" value="3">School</option>
+            <option id="self-dev" value="4">Self Development</option>
+            <option id="errands" value="5">Errands</option>
+        </select> -->
+        <button class="add_todo_button">+</button>
+    </form>
+
+    <div class="task_left">3 left</div>
+    <div class="separator"></div>
+
+<div id='taskView'>
+   
+
+
+
+    <ul class="todos_container">
+        
+
+    </ul>
+    <div class="todos_filter_bar">
+        
+        
+        <!-- <div class="filter_item all_item filter_item_active">All</div>
+        <div class="filter_item active_item">Active</div>
+        <div class="filter_item complete_item">Complete</div> -->
+    </div>
+
+     <!-- bottom nav -->
+     <div id="nav">
+        <nav>
+             <ul>
+                <li>
+                    <div class="filter_item complete_item">
+                        <img src="public/assets/checked.png" class="icon">
+                        <br>
+                        complete
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div class="filter_item active_item">
+                        <img src="public/assets/unchecked.png" class="icon">
+                        <br>
+                        incomplete
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="filter_item all_item filter_item_active">
+                        <img src="public/assets/list.png" class="icon">
+                        <br>
+                        all tasks</div>
+                   
+                </li>
+
+
+              
+            </ul>
+        </nav>
+    </div>  <!--  end nav -->
+</div>
+
+
+
+
+
+<script src="./js/script.js" type="module"></script>
+</div>
+</body>
+</html>
