@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 05 Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Klee+One&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+      
+        <h1 class="centerText">Week05 Notes</h1>
+        
+    </header>
+    <main id="notes">
+       <section>
+        <div>
+            <h2 class="notes">Chapter 10 - Testing and Debugging</h2>
+            <p>
+                Object-oriented programming is often used to model representations of objects in the real world. 
+                There are three main concepts in OOP: encapsulation, polymorphism and inheritance.
+            </p>
+
+            <br>
+            <h4>Errors, exceptions, and warnings</h4>
+            <p>
+                Errors are usually caused by one of the following:
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        <span class="defTitle">
+                            System error
+                        </span>
+                         ― there’s a problem with the system or external devices with which the program is interacting.
+
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="defTitle">
+                            Programmer error
+                        </span>
+                         ― the program contains incorrect syntax or faulty logic; it could even be as simple as a typo.
+
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="defTitle">
+                            User error 
+                        </span>
+                        ― the user has entered data incorrectly, which the program is unable to handle.
+
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+
+            </p>
+
+            <br>
+
+            <h4>The importance of testing and debugging</h4>
+            <p>
+                Javascript is built to fail silently, which spares us the heart attacks associated with error and warning nottifcations
+                 all over the place. However those who fail in silence aren't readily heard. You may mis something because the fail isn't in 
+                 your face. It is our responsibiltity make sure exceptions are caught, and dealt with by rigorousily testing our code.
+            </p>
+            <br>
+
+            <h4>Strict mode</h4>
+            <p>
+                Strict mode makes it so more exceptions and  warnings are produced, as well as prohibits the use of some deprecated features.
+                This is an effort to improve code quality 
+            </p>
+            <p>
+                Additionally Liniting Tools can be used to test the quality of JavaScript code, beyond simply using strict mode. They are designed to highlight any sloppy programming practices or syntax errors,
+                 and will complain if certain style conventions are not followed, such as how code is indented. 
+            </p>
+            <br>
+
+            <h4>Debugging in the browser</h4>
+            <p>
+                Debugging is the process of finding out where bugs occur in the code and then dealing with them. 
+            </p>
+            <br>
+            <p>
+                JavaScript contains a number of built-in constructor functions such as Object, Array, and Function 
+                that can be used to create objects, arrays and functions instead of literals.
+            </p>
+            <p>
+                <span class="defTitle">Alert()</span>
+                alert()stops a program from running until OK is clicked, it allows us to effectively put breakpoints in the code that let us check the value of 
+                variables at that point to see if they’re what we expect them to be. This is why it makes sense that in my Tic-Tac-Toe code 
+                the input wouldn't show up once the alert ran because it acts as a break point.
+            </p>
+
+            <p>
+                One of the most useful commands is the debugger keyword. This will create a breakpoint in your code that 
+                will pause the execution of the code and allow you to see where the program is currently up to. You can also 
+                hover over any variables to see what value they hold at that point. The program can then be restarted by clicking on 
+                the 'play' button.
+
+
+            </p>
+            <br>
+
+            <h4>Error objects</h4> 
+            <p>
+                An error object can be created by the host environment when an exception occurs, 
+                or it can be created in the code using a constructor function.
+            </p>   
+            <p>
+                The prototype can be used to add any new properties and methods after the class has been declared. It 
+                should be used to define any properties that will remain the same for every instance of the class.
+            </p>
+
+            <br>
+
+            <h4>Exception handling</h4> 
+            <p>
+                When an exception occurs, the program terminates with an error message. 
+                This is ideal in development as it allows us to identify and fix errors.  
+            </p>   
+            <p>
+                We can then deal with the error appropriately ― perhaps even ignore it ― and keep the program running.
+            </p>
+
+             
+            <br>
+
+            <h4>Test Driven Development (TDD)</h4> 
+            <p>
+                Acts as a template object that it inherits methods and properties from. An object's prototype object may also have a prototype object, 
+                which it inherits methods and properties from, and so on, this is known as a prototype chain. 
+            </p>   
+            <p>
+                The prototype can be used to add any new properties and methods after the class has been declared. It 
+                should be used to define any properties that will remain the same for every instance of the class.
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        Add a test – Write a test case that describe the function completely. In order to make the test cases 
+                        the developer must understand the features and requirements using user stories and use cases.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Run all the test cases and make sure that the new test case fails.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Write the code that passes the test case
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Run the test cases
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Refactor code – This is done to remove duplication of code.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Repeat the above mentioned steps again and again
+                    </p>
+                </li>
+
+                
+            </ol>
+
+            <br>
+            <p class="defTitle">Benefits:</p>
+
+            <ul>
+                <li>
+                    <p>
+                        Unit test provides constant feedback about the functions.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Quality of design increases which further helps in proper maintenance.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Test driven development act as a safety net against the bugs.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        TDD ensures that your application actually meets requirements defined for it.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        TDD have very short development lifecycle.
+                    </p>
+                </li>
+            </ul>
+
+
+            <div class="space">
+                <h3>Definitions</h3>
+                <ul>
+                    <li><p class="defTitle">Stack Traces</p>
+                        <span>
+                            This is a sequence of functions or method calls that lead to the point where the error occurred.  
+                             </span>
+                    </li>
+                    <li>
+                        <p class="defTitle">Exceptions</p>
+                        <span>
+                            An exception is an error that produces a return value that can then be used by the program 
+                            to deal with the error. 
+                        </span>
+                    </li>
+                    
+                    <li>
+                        <p class="defTitle">Warnings</p>
+                        <span>
+                            A warning can occur if there’s an error in the code that isn't enough to cause the program to crash. 
+                            This means the program will continue to run after a warning. 
+                         </span>
+                    </li>
+
+                 
+                
+                    
+                </ul>
+            </div>
+
+            <div class="space">
+                <h3>Questions</h3>
+                <ul>
+                   <li>
+                       <p>
+                          
+                       </p>
+                   </li> 
+
+                </ul>
+
+                <p>
+                </p>
+            </div>
+        </section>
+<hr>
+
+
+
+        <section>
+            <h2 class="notes">Chp15 - Modern JavaScript Development</h2>
+            <div>
+                <h4>
+                    Modular JavaScript
+                </h4>
+                <p>
+                    A module is a self-contained piece of code that provides functions and methods that can then be used in other files 
+                    and by other modules. This helps to keep code organized in separate, reusable files, which improves code maintainability. The code in a module should have a single purpose, and group together functions with distinct functionality. 
+                </p>
+
+                <h4>
+                    MVC Frameworks
+                </h4>
+                <p>MVC separates an application into three distinct, independent components that interact with each other:</p>
+                <ul>
+                    <li>
+                        <h4>Models</h4>
+                        <p>
+                            Models are objects that implement the functionality for creating, reading, updating and deleting 
+                            (known as CRUD tasks) specific pieces of information about the application, as well as any other associated logic and behavior. I
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <h4>Views</h4>
+                        <p>
+                            Views provide a visual representation of the model showing all the relevant information. 
+                            In a web application, this would be the HTML displayed on a web page. Views also provide a way for users to interact with an application, usually via forms. 
+                        </p>
+                    </li>
+
+
+                    <li>
+                        <h4>Controllers</h4>
+                        <p>
+                            Controllers link models and views together by communicating between them. They respond to events, which are usually inputs from a user 
+                            (entering some data into a form, for example), process the information, then update the model and view accordingly.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="space">
+                <h3>Definitions</h3>
+                <ul>
+                    <li><p class="defTitle">Package Managers</p>
+                        <span>
+                            Package managers allow developers to download modules from a central repository. 
+                            Apackageis just a directory with one or more files of code, as well as apackage.json 
+                            file that contains information about the code in the package.
+                         </span>
+                    </li>
+                    <li><p class="defTitle">Libraries</p>
+                        <span>
+                            a piece of code that provides several methods that make it easier to achieve common tasks. 
+                         </span>
+                    </li>
+                    
+                    <li><p class="defTitle">Templates</p>
+                        <span>
+                            Many MVC frameworks use templating languages to insert dynamic data into the page. 
+                            They can be whole web pages, but are often just partials — parts of a page. This means that the 
+                            application can update part 
+                            of the page without having to make a request to the server, saving an HTTP request. 
+                        </span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+       
+    </main>
+    <footer> &copy; 2021 | Portfolio | Claudia Chileshe </footer>
+</body>
+
+</html>
