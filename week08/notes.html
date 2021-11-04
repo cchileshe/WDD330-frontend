@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 8 Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Klee+One&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navigation">
+                <li><a href="#" id="menu">&equiv; Menu</a> </li>
+                <li><a href="../Week01/index.html">Week 1</a></li>
+                <li><a href="../Week02/index.html">Week 2</a></li>
+                <li><a href="../Week03/index.html">Week 3</a></li>
+                <li><a href="../Week04/index.html">Week 4</a></li>
+                <li><a href="../Week05/index.html">Week 5</a></li>
+                <li><a href="../Week07/index.html">Week 7</a></li>
+                <li><a href="../Week08/index.html">Week 8</a></li>
+                <li><a href="../Week09/index.html">Week 9</a></li>
+                <li><a href="../Week10/index.html">Week 10</a></li>
+            </ul>
+        </nav>
+        <h1>Week 8 Notes</h1>
+        <h2 class="notes">Transforms</h2>
+    </header>
+    <main id="notes">
+        <p>The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element on the page. 
+            The value of the transform property is one or more transform functions (separated by spaces) that will be applied in the order they’re provided. 
+
+        </p>
+        
+    
+        <br>
+        <h3>Translation</h3>
+        <p>
+            Translation functions allow you to move elements left, right, up, or down. These functions are similar to the behavior of position: 
+            relative; when declaring top and left, moving elements up and down or left and right along the x and y axes. 
+        </p>
+        <div>
+            <div class="wrap">
+                
+                <div class="box">
+                  <div class="blue translateX">
+                    translateX
+                  </div>
+                </div> 
+                <div class="box">
+                  <div class="blue translateY">
+                    translateY
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="blue translate">
+                    translate
+                  </div>
+                </div>  
+             <div class="box">
+                  <div class="blue translate3d">
+                    translate3d
+                  </div>
+                </div>
+               <div class="box">
+                 <div class="blue translateZ">
+                  translateZ
+                 </div>
+               </div> 
+            
+        </div>
+  
+        <br>
+
+        
+        <h3>Scaling</h3>
+        <p>
+            The scale(x,y) function scales an element by the defined factors horizontally then vertically. If only one value is provided, it
+             will be used for both the x and y values, growing or shrinking your element or pseudo-element while maintaining the original aspect ratio. 
+        </p>
+        <div>
+            <div class="wrap">
+                <div class="box">
+                  <div class="blue scaleX ">
+                    scaleX
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="blue scaleY">
+                    scaleY
+                  </div>
+                </div> 
+                <div class="box">
+                  <div class="blue scale">
+                    scale
+                  </div>
+                </div> 
+                
+            
+        </div>
+        <br>
+        <h3>Rotation</h3>
+        <p>
+            The rotate() function rotates an element around the point of origin by a specified angle value. As with scale, by default the point of origin 
+            is the element’s center. Generally, angles are declared in degrees, with positive degrees moving clockwise and negative moving counterclockwise. In addition to degrees, values can be provided in grads, radians, or turns, but we’ll just be sticking with degrees.
+        </p>
+        <div>
+            <div class="wrap">
+               
+                <div class="box">
+                  <div class="blue rotate">
+                    rotate
+                  </div>
+                </div>  
+                
+               <div class="box">
+                 <div class="blue rotateY">
+                  rotateY
+                 </div>
+               </div>
+               <div class="box">
+                 <div class="blue rotateX">
+                  rotateX
+                 </div>
+               </div>
+               
+            
+        </div>
+  
+        <br>
+
+        <h3>Skew</h3>
+        <p>
+            The skew(x,y) function specifies a skew along the x and y axes. As you’d expect, the x specifies the skew on the x axis, and the y 
+            specifies the skew on the y axis. If the second parameter is omitted, the skew will only occur on the x axis
+        </p>
+  
+        <br>
+        <div>
+            <div class="wrap">
+                <div class="box">
+                  <div class="blue skew">
+                    skew
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="blue skewX">
+                    skewX
+                  </div>
+                </div>  
+                <div class="box">
+                  <div class="blue skewY">
+                    skewY
+                  </div>
+                </div>  
+              </div>         
+        </div>
+
+        <hr>
+
+        <h2 class="notes">Transitions</h2>
+        <p>Here are the steps to create a simple transition using only CSS:</p>
+        <ol>
+            <li>Declare the original state of the element in the default style declaration.
+            </li>
+            <li>
+                Declare the final state of your transitioned element; for example, a :hover state.
+            </li>
+            <li>
+                Include the transition functions in your default style declaration using the transition properties, including: transition-property, transition-duration, transition-timing-function, 
+                and transition-delay. We’ll look at each of these and how they work shortly.
+            </li>
+        </ol>
+        <div class="elem"></div>
+        <br>
+
+
+
+        <h2 class="notes">Animations</h2>
+        <p>Transitions animate elements over time; however, they’re limited in what they can do. You can define starting and ending states, 
+            but there’s no fine-grained control over any intermediate states. CSS animations, unlike transitions, allow you to control each 
+            step of an animation via keyframes.</p>
+
+            <article class="ad-ad3">
+                <h1></h1>
+              </article>
+        <br> 
+        <br>
+        <hr>
+        <br>
+
+        <section>
+            <h3>Definitions</h3>
+            <ul>
+                <li><p class="defTitle">animation-fill-mode</p><span>
+                    property defines what happens before the first animation iteration begins and after the last animation iteration concludes. 
+                 </span>
+                </li>
+                <li><p class="defTitle">animation-play-state</p>
+                    <span>
+                        property defines whether the animation is running or paused. A paused animation displays the current state of the animation statically. 
+                         </span>
+                </li>
+                
+                
+                
+            </ul>
+
+        </section>
+
+       
+    </main>
+    <footer> &copy; 2021 | Portfolio | Claudia Chileshe </footer>
+</body>
+
+</html>
