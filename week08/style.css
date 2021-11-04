@@ -361,6 +361,11 @@ nav ul li a:visited {
       font-size: 20px;
       font-family: AcknowledgementMedium;
       text-align: center; }
+
+/* CANVAS */
+.myCanvas {
+    border: dotted 2px black;
+}
   
   
   

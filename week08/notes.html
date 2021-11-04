@@ -191,7 +191,49 @@
         <br> 
         <br>
         <hr>
+
+        <h2>Canvas, SVG, and Drag and Drop</h2>
+        <div>
+            <h3>Canvas</h3>
+            <p>
+                With canvas, we can draw shapes and lines, arcs and text, 
+                gradients and patterns. In addition, canvas gives us the power to manipulate pixels in images and even video.  
+            </p>
+            <h3>Drawing on the Canvas</h3>
+            <p>
+                All drawing on the canvas happens via the Canvas JavaScript API. In this chapter, we’ll walk you through several
+                 different things you can draw onto the canvas element. Each example will have a new function, and all of these different functions live in a file called canvas.js.
+            </p>
+            <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+                Sorry! Your browser doesn’t support Canvas.
+            </canvas>
+        </div>
         <br>
+        <div>
+            <h3>SVG</h3>
+            <p>
+                Unlike canvas, images created with SVG are available via the DOM. This enables technologies such as screen readers to see what’s present in an SVG object through its DOM node, as well as allowing you to inspect SVG using your browser’s developer tools. 
+
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <circle cx="50" cy="50" r="25" fill="red"/>
+            </svg>
+            <ol>
+                <li>
+                    The viewBox attribute defines the starting location, width, and height of the SVG image.
+
+                </li>
+                <li>
+                    The circle element defines a circle, with cx and cy the X and Y coordinates of the center of the circle. 
+                    The radius is represented by r, while fill defines the fill style.
+
+                </li>
+                <li>
+                    To view an SVG file, you simply open it via the File menu in any browser that supports SVG. Figure 12.11 shows what our circle looks like.
+
+                </li>
+            </ol>
+        </div>
 
         <section>
             <h3>Definitions</h3>
@@ -203,6 +245,12 @@
                 <li><p class="defTitle">animation-play-state</p>
                     <span>
                         property defines whether the animation is running or paused. A paused animation displays the current state of the animation statically. 
+                         </span>
+                </li>
+
+                <li><p class="defTitle">SVG</p>
+                    <span>
+                         stands for Scalable Vector Graphics, a specific file format that allows you to describe vector graphics using XML. 
                          </span>
                 </li>
                 
