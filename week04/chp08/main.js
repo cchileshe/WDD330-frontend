@@ -139,3 +139,5 @@ view.start.addEventListener('onClick', () => game.start(quiz), false);
 // Chp08:add an event handler that fires when the form is submitted
 view.response.addEventListener('submit', (event) => game.check(event), false);
 view.hide(view.response);
+
+
