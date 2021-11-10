@@ -1,27 +1,4 @@
-const links = [
-    {
-      label: "Week1 notes",
-      url: "week1/index.html"
-    }
-  ]
 
-  const toggleMenu = () => {
-    document.querySelector('#navigation').classList.toggle('display');
-  }
-  
-  document.querySelector('#navigation').addEventListener('click', toggleMenu);
-  
-  function sendAlert() {
-    alert("This is an alert() method!");
-  }
-  
-  function scrollBottom() {
-    window.scrollTo(0,5000);
-  }
-  
-  function scrollBack() {
-    window.scrollTo(0,50);
-  };
 
   const quiz = [
     { name: "Superman",realName: "Clark Kent" },
@@ -124,13 +101,13 @@ view.hide(view.response);
 
   // week 09 reading animation test
 
-  // const squareElement = document.getElementById('square');
-  // let angle = 0;
+  const squareElement = document.getElementById('square');
+  let angle = 0;
   
-  // function rotate() {
-  //     angle = (angle + 2)%360;
-  //     squareElement.style.transform = `rotate(${angle}deg)`
-  //     window.requestAnimationFrame(rotate);
-  // }
+  function rotate() {
+      angle = (angle + 2)%360;
+      squareElement.style.transform = `rotate(${angle}deg)`
+      window.requestAnimationFrame(rotate);
+  }
   
-  // const id = requestAnimationFrame(rotate);
+  const id = requestAnimationFrame(rotate);
