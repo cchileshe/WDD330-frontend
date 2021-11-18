@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 10 Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Klee+One&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+       
+        <h1>Week 10 Notes</h1>
+        <h2 class="notes">Client-side form validation</h2>
+    </header>
+    <main id="notes">
+        <h3>Built-in form validation examples</h3>
+        <form class="highlight">
+            <label for="choose">Would you prefer a banana or cherry?</label>
+            <input id="choose" name="i_like">
+            <button>Submit</button>
+          </form>
+          <br>
+        <h4>
+            The required attribute
+        </h4>
+        <p>
+            To make an input mandatory, add this attribute to the element. When this attribute is set, the element matches the :required 
+            UI pseudo-class and the form won't submit, displaying an error message on submission when the input is empty.
+        </p>
+        <form>
+            <label for="choose2">Would you prefer a banana or cherry? (required)</label>
+            <input id="choose2" name="i_like" required>
+            <button>Submit</button>
+          </form>
+          <br>
+
+          <h4>Validating against a regular expression</h4>
+          <p>
+            A regular expression (regex) is a pattern that can be used to match character combinations in text strings, 
+            so regexps are ideal for form validation and serve a variety of other uses in JavaScript.
+          </p>
+          <form>
+            <label for="choose">Would you prefer a banana or a cherry?</label>
+            <input id="choose3" name="i_like" required pattern="[Bb]anana|[Cc]herry">
+            <button>Submit</button>
+          </form>
+
+          <br>
+
+          <h4>Constraining the values of your entries</h4>
+          <p>
+            For number fields, the min and max attributes can be used to provide a range of valid values. 
+            If the field contains a value outside this range, it will be invalid.
+
+          </p>
+
+          <form>
+            <div>
+              <label for="choose">Would you prefer a banana or a cherry?</label>
+              <input type="text" id="choose4" name="i_like" required minlength="6" maxlength="6">
+            </div>
+            <div>
+              <label for="number">How many would you like?</label>
+              <input type="number" id="number" name="amount" value="1" min="1" max="10">
+            </div>
+            <div>
+              <button>Submit</button>
+            </div>
+          </form>
+          <br>
+
+          <h3>Full example</h3>
+          <form>
+            <p>
+              <fieldset>
+                <legend>Do you have a driver's license?<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+                <!-- While only one radio button in a same-named group can be selected at a time,
+                     and therefore only one radio button in a same-named group having the "required"
+                     attribute suffices in making a selection a requirement -->
+                <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+                <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+              </fieldset>
+            </p>
+            <p>
+              <label for="n1">How old are you?</label>
+              <!-- The pattern attribute can act as a fallback for browsers which
+                   don't implement the number input type but support the pattern attribute.
+                   Please note that browsers that support the pattern attribute will make it
+                   fail silently when used with a number field.
+                   Its usage here acts only as a fallback -->
+              <input type="number" min="12" max="120" step="1" id="n1" name="age"
+                     pattern="\d+">
+            </p>
+            <p>
+              <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+              <input type="text" id="t1" name="fruit" list="l1" required
+                     pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+              <datalist id="l1">
+                <option>Banana</option>
+                <option>Cherry</option>
+                <option>Apple</option>
+                <option>Strawberry</option>
+                <option>Lemon</option>
+                <option>Orange</option>
+              </datalist>
+            </p>
+            <p>
+              <label for="t2">What's your e-mail address?</label>
+              <input type="email" id="t2" name="email">
+            </p>
+            <p>
+              <label for="t3">Leave a short message</label>
+              <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+            </p>
+            <p>
+              <button>Submit</button>
+            </p>
+          </form>
+          
+          <br>
+          <h3>
+            Validating forms using JavaScript
+          </h3>
+          <form novalidate>
+            <p>
+              <label for="mail">
+                <span>Please enter an email address:</span>
+                <input type="email" id="mail" name="mail" required minlength="8">
+                <span class="error" aria-live="polite"></span>
+              </label>
+            </p>
+            <button>Submit</button>
+          </form>
+        
+    
+        <br>
+      
+        <div class="highlight">
+           <p> 
+               The <span class="defTitle"> window.confirm()</span>  method will stop the execution of the program and display a confirmation dialog 
+               that shows the message provided as an argument, and giving the options of OK or Cancel. It returns the boolean values of true if the 
+               user clicks OK, and false if the user clicks Cancel 
+               <br>
+
+            The <span class="defTitle">window.prompt()</span> method will stop the execution of the program. It displays a dialog that shows a message
+             provided as an argument, as well as an input field that allows the user to enter text. This text is then returned as a string when the user 
+             clicks OK. If the user clicks Cancel, null is returned
+             <br>
+
+            <span class="defTitle">Cookies</span> Cookies are small files that are saved locally on a user’s computer. 
+             <br>
+           </p> 
+        </div>
+        
+        <br>
+
+        <h1>Using Fetch</h1>
+       
+        <p>
+        
+        The Fetch API provides the fetch() method defined on a window object. This is used to perform 
+        requests. This method returns a Promise which can be further used to retrieve response of the request. 
+        </p>
+      
+            <p class='highlight'>
+
+                Basic Syntax:  <br>
+ 
+
+                fetch(url) <br> //call the fetch function passing the url of the API as a parameter <br>
+               .then(function(){ <br><br>
+               }); <br>
+                 //code for handling data from API <br> 
+               .catch(function(){ <br><br>
+                 //code when the server returns any error <br>
+               });
+            </p>
+
+            <p>
+                <span class="defTitle"> Request: </span>
+A Request object represents the request part of a fetch call. By passing fetch a Request you can make advanced and customized requests: 
+ 
+            </p>
+        
+            <p>
+                <span class="defTitle">LOADING JSON </span>
+                
+We cannot block the user interface waiting until the request completes. That is why fetch() method returns a Promise. A promise is actually an object which represents a future result. 
+The then() method is used to wait for the response from the server-side and log it to the console.
+            </p>
+
+     
+        <br>
+
+        
+    </main>
+    <script src="/week10/js/main.js"></script>
+    <footer> &copy; 2021 | Portfolio | Claudia Chileshe </footer>
+</body>
+
+</html>
