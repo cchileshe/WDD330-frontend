@@ -1,0 +1,385 @@
+/* 
+colors
+
+- blue #5ad8f9
+- grey
+
+
+*/
+/*=======================
+    GENERAL
+=========================*/
+body{
+    margin-top:20px;
+    background: #f8f8f8;
+}
+
+.right{
+    text-align: right;
+}
+
+.border-bottom{
+    border-bottom: #ededef solid 1px;
+}
+
+.nav-link {
+    color: #5ad8f9!important;
+    
+}
+.center {
+    text-align: center;
+}
+a , .blue-text{
+    color:#5ad8f9!important;
+}
+.main_content {
+    display: block;
+    width: 500px;
+    margin: 10px auto 100px;
+    background-color: #fff;
+    min-height: 700px;
+    position: relative;
+}
+h1{
+    font-size: 18px!important;
+}
+
+h2{
+    font-size: 14px!important;
+    font-variant: small-caps;
+}
+.heading{
+    background-color:#37373d;
+    padding:10px;
+    color:whitesmoke;
+    
+}
+
+.big-text{
+    font-size: 28px!important;
+    padding-top:.8em;
+}
+
+.small-text{
+    font-size: 16px!important;
+    padding-top:.8em;
+}
+
+.row {
+     --bs-gutter-x: none!important;
+
+}
+
+.blue-title{
+    color:#5ad8f9!important;
+    font-size: 24px!important;
+    font-weight:normal!important;
+}
+.heavy { 
+    font-weight: bold;
+    text-transform:uppercase;
+    color:#5ad8f9!important;
+    font-size: 24px!important;
+   
+ }
+ .center-item{
+     margin: 0 auto;
+ }
+
+.small-text{
+    font-size: 11px!important;
+    color: #bababa;
+}
+img.workout-icon{
+    margin: 0 auto;
+    width:80px;
+    padding-bottom: 1em;
+}
+ /*================================
+       INDEX STYLE
+==================================*/  
+
+#title{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 28px!important;
+
+}
+
+
+.svg-text{
+     font-size: 1.8rem;
+     
+ }
+ #actions{
+     margin-top:3em!important;
+     margin-bottom:2em;
+
+ }
+
+ #actions button{
+    width:85px;
+    color:white!important;
+}
+
+
+/*================================
+        BUTTOM
+==================================*/  
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+.btn-circle.btn-md {
+    width: 55px;
+    height: 55px;
+    padding: 7px 10px;
+    border-radius: 30px;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 1em;
+}
+
+
+/*================================
+        side bar
+==================================*/   
+/* The sidebar menu */
+
+
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+/*=======================
+   CHECKBOX STYLE
+=========================*/
+
+.col-1{
+    width:8%!important;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0.25em;
+}
+
+.form-check-input {
+    width: 1.4em!important;
+    height: 1.4em!important;
+    border: 1px dashed rgba(0,0,0,.25)!important;
+   
+} 
+
+
+.form-check-input:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: .5;
+}
+
+
+.form-check-input:checked{
+    color: #fff;
+    background-color: #5ad8f9!important;
+    border-color: #5ad8f9!important;
+}
+.form-check-input:focus {
+    border-color: none!important;
+    box-shadow: none!important;
+}
+
+/*=======================
+    WEEK LABEL
+=========================*/
+
+.bg-light {
+    background-color: #eef0f2!important;
+}
+
+.label{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1.2em;
+    font-size: 18px;
+    color:#515c63;
+
+}
+
+
+
+
+
+/*=======================
+    WORKOUT TO DO LIST 
+=========================*/
+.todo-nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.todo-list {
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 600px;
+}
+
+.week{
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.todo-list .todo-item {
+    padding: 15px;
+    margin: 5px 0;
+    border-bottom: #ededef solid 1px;
+    
+}
+
+/*================================
+        FILTERS
+==================================*/        
+.todo-list.only-active .todo-item.complete {
+    display: none
+}
+
+
+.todo-list .todo-item.complete span {
+    text-decoration: line-through
+}
+
+.remove-todo-item {
+    color: #ccc;
+    visibility: hidden
+}
+
+.remove-todo-item:hover {
+    color: #5f5f5f
+}
+
+.todo-item:hover .remove-todo-item {
+    visibility: visible
+}
+
+
+
+div.checker {
+    width: 18px;
+    height: 18px
+}
+
+div.checker input,
+div.checker span {
+    width: 18px;
+    height: 18px
+}
+
+div.checker span {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    text-align: center;
+    background-position: 0 -260px;
+}
+
+div.checker, div.checker input, div.checker span {
+    width: 19px;
+    height: 19px;
+}
+
+div.checker, div.radio, div.uploader {
+    position: relative;
+}
+
+div.button, div.button *, div.checker, div.checker *, div.radio, div.radio *, div.selector, div.selector *, div.uploader, div.uploader * {
+    margin: 0;
+    padding: 0;
+}
+
+div.button, div.checker, div.radio, div.selector, div.uploader {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.card {
+    
+    margin-bottom: 20px;
+    border: initial;
+    background: #fff;
+    border-radius: calc(.15rem - 1px);
+    box-shadow: 0 1px 15px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.04);
+}
+
+/*================================
+        timer
+==================================*/
+#countdown{
+    cursor: pointer;
+}
