@@ -35,6 +35,8 @@ class Timer {
 
     this.el.reset.addEventListener("click", () => {
       this.reset();
+      localStorage.clear();
+      location.reload();
     });
 
     this.el.pause.addEventListener("click", () => {
