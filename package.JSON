@@ -4,22 +4,24 @@
     "description": "application to help users track their insanity max30 workouts",
     "main": "app.js",
     "scripts": {
-      "start": "app.js",
-      "start-auth": "node server.js"
+        "start": "app.js",
+        "start-auth": "node server.js"
     },
     "author": "claudia chileshe",
     "license": "ISC",
     "dependencies": {
-      "@popperjs/core": "^2.10.2",
-      "babel-preset-env": "^1.7.0",
-      "babel-register": "^6.26.0",
-      "bootstrap": "^5.1.3",
-      "bootstrap-icons": "^1.7.1",
-      "chart.js": "^3.6.2",
-      "jquery": "^3.6.0",
-      "json-server": "^0.15.0",
-      "jsonwebtoken": "^8.5.1",
-      "sass": "^1.43.5"
+        "@popperjs/core": "^2.10.2",
+        "babel-preset-env": "^1.7.0",
+        "babel-register": "^6.26.0",
+        "bootstrap": "^5.1.3",
+        "bootstrap-icons": "^1.7.1",
+        "chart.js": "^3.6.2",
+        "chartjs-adapter-date-fns": "^2.0.0",
+        "date-fns": "^2.27.0",
+        "directory-import": "^2.3.0",
+        "jquery": "^3.6.0",
+        "json-server": "^0.15.0",
+        "jsonwebtoken": "^8.5.1",
+        "sass": "^1.43.5"
     }
 }
-  
